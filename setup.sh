@@ -1,5 +1,7 @@
 #!/bin/bash -u
 
+version="$(lsb_release -r | cut -f 2)"
+
 #Get updates and upgrade all packages to the last version before install any other software
 sudo apt update
 sudo apt upgrade -y
@@ -12,7 +14,10 @@ echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sud
 sudo add-apt-repository ppa:linuxuprising/java
 
 #Update data of Repositories
-sudo apt-get update
+if [ $(echo "$version < 18" | bc) -eq 1 ]
+then
+	sudo apt-get update
+fi
 
 #Install all programs above
 sudo apt-get install google-chrome-stable -y
