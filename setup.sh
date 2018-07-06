@@ -32,6 +32,7 @@ sudo snap install eclipse --classic
 sudo snap install pycharm-community --classic
 sudo snap install skype --classic
 sudo snap install discord --classic
+sudo snap install android-studio --classic
 sudo apt-get install oracle-java10-installer -y
 
 #Setup Java enviornment
