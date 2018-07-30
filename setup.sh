@@ -21,10 +21,8 @@ fi
 
 #Install all programs above
 sudo apt-get install google-chrome-stable -y
-sudo apt install texlive -y
-sudo apt install texlive-lang-spanish -y
-sudo apt install texlive-lang-english -y
-sudo apt install texstudio -y
+sudo apt install texlive-full
+sudo apt install texstudio
 sudo snap install telegram-desktop
 sudo snap install spotify
 sudo snap install sublime-text --classic
