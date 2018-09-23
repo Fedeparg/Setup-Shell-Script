@@ -49,7 +49,7 @@ sudo apt autoclean
 sudo apt autoremove
 
 #Git configuration
-git config --global core.editor vscode -w
+git config --global core.editor "vscode -w"
 git config --global user.name "Your name here"
 git config --global user.email "youremail@mail.com"
 
