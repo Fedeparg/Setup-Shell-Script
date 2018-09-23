@@ -19,7 +19,7 @@ then
 	sudo apt-get update
 fi
 
-#Install all programs above
+#Install all programs
 sudo apt-get install google-chrome-stable -y
 sudo snap install telegram-desktop
 sudo snap install spotify
@@ -49,6 +49,11 @@ sudo apt autoclean
 sudo apt autoremove
 
 #Git configuration
-git config --global core.editor vscode
+git config --global core.editor vscode -w
 git config --global user.name "Your name here"
 git config --global user.email "youremail@mail.com"
+
+#Install zsh
+sudo apt install zsh
+#Now install "oh-my-zsh" for default configuration
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
