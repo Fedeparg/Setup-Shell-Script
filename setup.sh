@@ -21,17 +21,20 @@ fi
 
 #Install all programs above
 sudo apt-get install google-chrome-stable -y
-sudo apt install texlive-full
-sudo apt install texstudio
 sudo snap install telegram-desktop
 sudo snap install spotify
 sudo snap install sublime-text --classic
 sudo snap install eclipse --classic
-sudo snap install pycharm-community --classic
+sudo snap install pycharm-professional --classic
+sudo snap install intellij-idea-ultimate --classic
+sudo snap install clion --classic
+sudo snap install vscode --classic
 sudo snap install skype --classic
 sudo snap install discord --classic
-sudo snap install android-studio --classic
+sudo apt install texlive-full -y
+sudo apt install texstudio -y
 sudo apt-get install oracle-java10-installer -y
+sudo snap install android-studio --classic
 
 #Setup Java enviornment
 sudo apt-get install oracle-java10-set-default
@@ -44,3 +47,8 @@ EOL
 sudo apt-get autoclean
 sudo apt autoclean
 sudo apt autoremove
+
+#Git configuration
+git config --global core.editor vscode
+git config --global user.name "Your name here"
+git config --global user.email "youremail@mail.com"
