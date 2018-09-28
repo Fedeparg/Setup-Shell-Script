@@ -21,6 +21,7 @@ fi
 
 #Install all programs
 sudo apt-get install google-chrome-stable -y
+sudo apt-get install python3-pip
 sudo snap install telegram-desktop
 sudo snap install spotify
 sudo snap install sublime-text --classic
