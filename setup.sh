@@ -21,7 +21,7 @@ fi
 
 #Install all programs
 sudo apt-get install google-chrome-stable -y
-sudo apt-get install python3-pip
+sudo apt-get install python3-pip -y
 sudo snap install telegram-desktop
 sudo snap install spotify
 sudo snap install sublime-text --classic
@@ -34,14 +34,14 @@ sudo snap install skype --classic
 sudo snap install discord --classic
 sudo apt install texlive-full -y
 sudo apt install texstudio -y
-sudo apt-get install oracle-java10-installer -y
+sudo apt-get install oracle-java11-installer -y
 sudo snap install android-studio --classic
 
 #Setup Java enviornment
-sudo apt-get install oracle-java10-set-default
+sudo apt-get install oracle-java11-set-default
 sudo cat >> /etc/environment <<EOL
-JAVA_HOME=/usr/lib/jvm/java-10-oracle
-JRE_HOME=/usr/lib/jvm/java-10-oracle/jre
+JAVA_HOME=/usr/lib/jvm/java-11-oracle
+JRE_HOME=/usr/lib/jvm/java-11-oracle/jre
 EOL
 
 #Cleaning files
