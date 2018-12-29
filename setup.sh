@@ -10,7 +10,7 @@ sudo apt upgrade -y
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 
-#Add Java 10 Repository
+#Add Java 11 Repository
 sudo add-apt-repository ppa:linuxuprising/java
 
 #Update data of Repositories
@@ -20,8 +20,8 @@ then
 fi
 
 #Install all programs
-sudo apt-get install google-chrome-stable -y
-sudo apt-get install python3-pip -y
+sudo apt install google-chrome-stable -y
+sudo apt install python3-pip -y
 sudo snap install telegram-desktop
 sudo snap install spotify
 sudo snap install sublime-text --classic
@@ -34,11 +34,11 @@ sudo snap install skype --classic
 sudo snap install discord --classic
 sudo apt install texlive-full -y
 sudo apt install texstudio -y
-sudo apt-get install oracle-java11-installer -y
+sudo apt install oracle-java11-installer -y
 sudo snap install android-studio --classic
 
 #Setup Java enviornment
-sudo apt-get install oracle-java11-set-default
+sudo apt install oracle-java11-set-default
 sudo cat >> /etc/environment <<EOL
 JAVA_HOME=/usr/lib/jvm/java-11-oracle
 JRE_HOME=/usr/lib/jvm/java-11-oracle/jre
